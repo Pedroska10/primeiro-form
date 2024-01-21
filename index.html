@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Usuário</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        background-color: #f8f9fa;
+      }
+
+      .container {
+        max-width: 500px;
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+      }
+
+      .btn-primary {
+        background-color: #007bff;
+        border-color: #007bff;
+      }
+
+      .btn-primary:hover {
+        background-color: #0056b3;
+        border-color: #0056b3;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">Cadastro de Usuário</h2>
+      <form>
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome:</label>
+          <input type="text" class="form-control" id="nome" required />
+        </div>
+        <div class="mb-3">
+          <label for="cpf" class="form-label">CPF:</label>
+          <input type="text" class="form-control" id="cpf" required />
+        </div>
+        <div class="mb-3">
+          <label for="dataNascimento" class="form-label"
+            >Data de Nascimento:</label
+          >
+          <input
+            type="date"
+            class="form-control"
+            id="dataNascimento"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" required />
+        </div>
+        <div class="mb-3">
+          <label for="telefone" class="form-label">Telefone:</label>
+          <input type="tel" class="form-control" id="telefone" required />
+        </div>
+        <div class="mb-3">
+          <label for="endereco" class="form-label">Endereço:</label>
+          <input type="text" class="form-control" id="endereco" required />
+        </div>
+        <div class="mb-3">
+          <label for="estado" class="form-label">Estado:</label>
+          <select class="form-select" id="estado" required>
+            <option value="" disabled selected>Selecione um estado</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="cidade" class="form-label">Cidade:</label>
+          <select class="form-select" id="cidade" required>
+            <option value="" disabled selected>Selecione uma cidade</option>
+          </select>
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary" id="botao">
+            Cadastrar
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
